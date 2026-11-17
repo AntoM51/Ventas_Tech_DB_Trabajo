@@ -6,12 +6,12 @@
 ## 📝 Descripción General del Proyecto
 **RetailPro** es una solución integral de Business Intelligence diseñada para transformar los datos transaccionales de ventas minoristas de tecnología en información estratégica para la toma de decisiones. 
 
-A lo largo del flujo de trabajo, se estructuró la base de datos relacional, se construyeron vistas consolidadas en SQL, se diseñó un modelo dimensional en esquema estrella y se desarrollaron tableros interactivos con métricas clave de negocio (KPIs), análisis de rotación de inventario y segmentación de clientes.
+El flujo de trabajo abarcó la estructuración de la base de datos relacional, la construcción de vistas en SQL, el diseño de un modelo dimensional en esquema estrella y el desarrollo de tableros interactivos orientados a métricas clave (KPIs), rotación de inventario y segmentación de clientes.
 
 ---
 
 ## 🛠️ Stack Tecnológico y Herramientas Utilizadas
-* **SQL (SQL Server):** Extracción, limpieza, transformación (ETL) y creación de vistas base consolidando ventas, clientes, productos y categorías.
+* **SQL (SQL Server):** Transformación, limpieza y estructuración de consultas avanzadas para la creación de vistas base que consolidan ventas, clientes, productos y categorías.
 * **Modelado Dimensional:** Implementación de un esquema estrella (*Star Schema*) bajo estándares de nomenclatura (`Dim_` para dimensiones y `Fact_` para tablas de hechos) con relaciones unidireccionales ($1:N$).
 * **Power BI Desktop:** Conexión a fuentes de datos, modelado relacional y visualización interactiva de reportes ejecutivos.
 * **DAX (Data Analysis Expressions):** Creación de una tabla dedicada de medidas (`_Medidas`) con cálculos dinámicos de facturación, ticket promedio, unidades vendidas e inteligencia de tiempo (`SAMEPERIODLASTYEAR`).
@@ -47,7 +47,7 @@ Ventas_Tech_DB_Trabajo/
 4. Ejecuta `02_insercion_datos.sql` para poblar las tablas con los datos transaccionales de prueba.
 5. Corre `03_vistas_y_consultas.sql` para generar la vista consolidada (`vw_detalle_ventas`) que alimentará el modelo analítico.
 
-### Paso 2: Apertura y Actualización en Power BI Desktop
+### Paso 2: Carga y Visualización en Power BI Desktop
 1. Abre **Power BI Desktop** (asegúrate de tener instalada una versión reciente).
 2. Navega a la carpeta `/power_bi` y abre el archivo `RetailPro_Dashboard.pbix`.
 3. Si el origen de datos apunta a un servidor local distinto al tuyo, dirígete a **Transformar datos > Configuración de origen de datos** y actualiza el nombre de tu servidor SQL local.
